@@ -4,27 +4,27 @@
 class Grippd < Formula
   desc "Infrastructure from one small grippd.yaml"
   homepage "https://grippd.sh"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     on_arm do
       url "https://github.com/grippd/homebrew-tap/releases/download/cli-v#{version}/grippd-aarch64-apple-darwin.tar.gz"
-      sha256 "b7d117fb09d9f8d72ead3197404fa08237ed3f511012b651956a27a6b67964a2" # aarch64-apple-darwin
+      sha256 "14bb432809b46501e16528034116008e147565ca9f2875055e3024b2e603b07b" # aarch64-apple-darwin
     end
     on_intel do
       url "https://github.com/grippd/homebrew-tap/releases/download/cli-v#{version}/grippd-x86_64-apple-darwin.tar.gz"
-      sha256 "411ec1d866c10b86e30af89cc49d14b1eb02d51d981a72d6ec17bc98341e2a9f" # x86_64-apple-darwin
+      sha256 "db1d8242c5a285fb21accc8067c36c0fe23603052973157af8b2317179cf0ba0" # x86_64-apple-darwin
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/grippd/homebrew-tap/releases/download/cli-v#{version}/grippd-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "25c5d893e04d07694c5c3c38965465717e898e80b7b721aaf631278c5e6671bd" # aarch64-unknown-linux-musl
+      sha256 "04f4f2c17a80fdc2c03c0e1bfb732f96e861545879ba2c3dc48af8c2b3af34b7" # aarch64-unknown-linux-musl
     end
     on_intel do
       url "https://github.com/grippd/homebrew-tap/releases/download/cli-v#{version}/grippd-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "853138e20a5d69a8fa8dc8f73b45945449b9b92d1ef86326040bf6a4bd0e5736" # x86_64-unknown-linux-musl
+      sha256 "a3812bdaabee1439348c2080900928d9f0268a58ba5f92cb075f2af22c37a1b8" # x86_64-unknown-linux-musl
     end
   end
 
